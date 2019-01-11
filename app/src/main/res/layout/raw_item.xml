@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="3dp"
+    app:contentPadding="10dp"
+    android:layout_marginBottom="@dimen/dimen16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgItem"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/dimen16dp"
+            android:layout_marginRight="@dimen/dimen16dp"
+            android:src="@drawable/camera1" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtItemName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imgItem"
+            android:layout_toRightOf="@id/imgItem"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingStart="8dp"
+            android:paddingLeft="8dp"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/font16"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry"
+            tools:text="@tools:sample/lorem" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtItemPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtItemName"
+            android:layout_toEndOf="@id/imgItem"
+            android:layout_toRightOf="@id/imgItem"
+            android:drawableStart="@drawable/ic_attach_money"
+            android:drawableLeft="@drawable/ic_attach_money"
+            android:textSize="@dimen/font16"
+            tools:text="10" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imgGpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtItemPrice"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/ic_gpay" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
