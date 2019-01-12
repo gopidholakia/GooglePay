@@ -34,17 +34,19 @@ object Constants {
     val SUPPORTED_METHODS = Arrays.asList(
             "PAN_ONLY",
             "CRYPTOGRAM_3DS")
-    val CURRENCY_CODE = "USD"
-    val SHIPPING_SUPPORTED_COUNTRIES = Arrays.asList("US", "GB")
-    val PAYMENT_GATEWAY_TOKENIZATION_NAME = "example"
+    val CURRENCY_CODE = "INR"
+    val SHIPPING_SUPPORTED_COUNTRIES = Arrays.asList("US", "GB", "IN")
+    val PAYMENT_GATEWAY_TOKENIZATION_NAME = "stripe"
     val PAYMENT_GATEWAY_TOKENIZATION_PARAMETERS: HashMap<String, String> = object : HashMap<String, String>() {
         init {
             put("gateway", PAYMENT_GATEWAY_TOKENIZATION_NAME)
+            put("stripe:publishableKey", "pk_test_TYooMQauvdEDq54NiTphI7jx")
+            put("stripe:version", "2018-11-08")
             put("gatewayMerchantId", "exampleGatewayMerchantId")
             // Your processor may require additional parameters.
         }
     }
-    val DIRECT_TOKENIZATION_PUBLIC_KEY = "REPLACE_ME"
+    val DIRECT_TOKENIZATION_PUBLIC_KEY = "pk_test_TYooMQauvdEDq54NiTphI7jx"
 
     val DIRECT_TOKENIZATION_PARAMETERS: HashMap<String, String> = object : HashMap<String, String>() {
         init {

@@ -138,7 +138,7 @@ object PaymentsUtil {
             paymentDataRequest.put("merchantInfo", PaymentsUtil.merchantInfo)
 
 
-            paymentDataRequest.put("shippingAddressRequired", true)
+            paymentDataRequest.put("shippingAddressRequired", false)
 
             val shippingAddressParameters = JSONObject()
             shippingAddressParameters.put("phoneNumberRequired", false)
