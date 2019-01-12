@@ -115,6 +115,7 @@ class MainActivity : AppCompatActivity() {
 
             val billingName = paymentMethodData.getJSONObject("info").getJSONObject("billingAddress").getString("name")
             Log.d("BillingName", billingName)
+
             Toast.makeText(this, getString(R.string.payments_show_name, billingName), Toast.LENGTH_LONG)
                     .show()
 
