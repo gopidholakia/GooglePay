@@ -119,7 +119,6 @@ class MainActivity : AppCompatActivity() {
                     .show()
 
             // Logging token string.
-
             Log.d("GooglePaymentToken", paymentMethodData.getJSONObject("tokenizationData").getString("token"))
         } catch (e: JSONException) {
             Log.e("handlePaymentSuccess", "Error: " + e.toString())

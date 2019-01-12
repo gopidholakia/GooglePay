@@ -141,7 +141,6 @@ object PaymentsUtil {
             paymentDataRequest.put("shippingAddressRequired", false)
 
             val shippingAddressParameters = JSONObject()
-
             shippingAddressParameters.put("phoneNumberRequired", false)
 
             val allowedCountryCodes = JSONArray(Constants.SHIPPING_SUPPORTED_COUNTRIES)

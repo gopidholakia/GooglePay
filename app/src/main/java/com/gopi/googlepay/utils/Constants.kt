@@ -39,7 +39,6 @@ object Constants {
     val PAYMENT_GATEWAY_TOKENIZATION_NAME = "stripe"
     val PAYMENT_GATEWAY_TOKENIZATION_PARAMETERS: HashMap<String, String> = object : HashMap<String, String>() {
         init {
-
             put("gateway", PAYMENT_GATEWAY_TOKENIZATION_NAME)
             put("stripe:publishableKey", "pk_test_TYooMQauvdEDq54NiTphI7jx")
             put("stripe:version", "2018-11-08")
